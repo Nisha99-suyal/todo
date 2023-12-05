@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 export default function ProductForm(props){
     const[date,setDate]=useState('');
     const[title,setTitle]=useState('');
@@ -14,7 +15,7 @@ export default function ProductForm(props){
         <div className="ProductForm">
            <div>
              <label>Date</label>
-             <input type="date" value={date}  onChange={(e)=>setDate(e.target.value)} />
+             <input type="date" value={date} onChange={(e)=>setDate(e.target.value)} />
            </div> 
            <div className="mt-2">
              <label>Title</label>
